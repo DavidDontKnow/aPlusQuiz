@@ -4,60 +4,121 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #171a21;
-    color: whitesmoke;
+    color: #c7d5e0;
 }
 
 body {
     text-align: center;
 }
 
-li {
-    list-style: none;
-}
-
-h1,
-h2 {
-    margin: 10px 0;
-}
-
-.startButton {
-    background-color: #4CAF50;
-    border: none;
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 2rem;
+    background-color: slategray;
+    border-radius: 0 0 .5rem .5rem;
+
 }
 
-.question p {
+#question {
     font-size: 1.5rem;
-    margin: 1rem 0;
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    border: #1b2838 2px solid;
+    margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
     border-radius: .5rem;
     background-color: #2a475e;
+    font-weight: bold;
 }
 
-.choice {
+.button {
     background-color: #1b2838;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 2rem;
+    margin: .3rem .2rem;
+    min-height: 50px;
     width: 90%;
-    min-height: 2rem;
-    margin-top: .7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button:hover:not([disabled]) {
+    background-color: #2a475e;
+    color: white;
+}
+
+button:disabled {
+    cursor: no-drop;
+}
+
+.correct {
+    background-color: #4CAF50;
+}
+
+.wrong {
+    background-color: #f44336;
+}
+
+#nextButton {
+    background-color: #66c0f4;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2rem auto;
+    min-height: 50px;
+    width: 50%;
+    border-radius: .5rem;
+    color: black;
+    cursor: pointer;
+}
+
+#nextButton:hover {
+    background-color: #75c5f4;
+}
+
+.progress {
+    margin: 5rem auto;
+    padding: 1rem;
+    font-size: medium;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 30%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #2a475e;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: slategray;
+    border-radius: .5rem .5rem 0 0;
+}
+
+footer p {
+    font-size: small;
+    background-color: slategray;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: slategray;
+}
+
+.app {
+    margin-bottom: 200px;
 }

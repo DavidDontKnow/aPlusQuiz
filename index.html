@@ -10,22 +10,28 @@
 </head>
 
 <body>
-    <h1>A+ Practice Quiz</h1>
-    <div class="container">
-        <div class="quizArea">
-            <div class="question">
-                <h2 class="questionNum">Welcome!</h2>
-                <p class="questionText">This is a compTIA A+ practice test to get you geared up for the Core 1 exam!
-                    <br> <br>Click the button below to start the quiz. <br> <br>Good luck!
-                </p>
-                <ul class="answers">
-
-                </ul>
-                <button class="startButton">Start Quiz</button>
+    <div class="app">
+        <h1>CompTIA A+ Practice Test</h1>
+        <div class="quiz" id="quiz">
+            <h2 id="question">This is a practice question. Chose the answer that is correct</h2>
+            <div id="answerButtons">
+                <button class="button">Wrong</button>
+                <button class="button">Correct</button>
+                <button class="button">Wrong</button>
+                <button class="button">Wrong</button>
             </div>
+            <button id="nextButton">Next Question</button>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <div id="questionTracker">
+    </div>
+    <footer>
+        <p>Questions from <a target="_blank" href="https://www.professormesser.com/220-1101-success-bundle/">Professor
+                Messer</a> 220-1101 A+ Study Materials </p>
+        <p>Created by <a target="_blank" href="https://daveed.dev/">David Gutierrez</a></p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
