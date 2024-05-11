@@ -732,10 +732,21 @@ const quiz = document.getElementById("questionTracker");
 let currentQuestionIndex = 0;
 let score = 0;
 
-startGame();
+
+
+// startGame();
+init();
+
+function init() {
+    nextButton.style.display = "none";
+    const startButton = document.getElementById("startButton");
+    startButton.addEventListener("click", startGame);
+}
 
 
 function startGame() {
+    startButton.style.display = "none";
+    randomizeQuestions();
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
@@ -819,3 +830,6 @@ function showProgress() {
     pro.innerHTML = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
+function randomizeQuestions() {
+    questions.sort(() => Math.random() - 0.5);
+}
