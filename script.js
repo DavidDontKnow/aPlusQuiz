@@ -721,8 +721,119 @@ const questions = [
             "D": "Mantrap"
         },
         "answer": "A"
+    },
+    {
+        "question": "A user in the marketing department would like to use a stylus to provide input through an external digitizer. Which of the following would be the BEST choice for this requirement?",
+        "choices": {
+            "A": "LCD touchscreen",
+            "B": "Port replicator",
+            "C": "Wireless mouse",
+            "D": "Drawing pad"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "A company has designed a platform to scale up when the application use increases during the day, and scale back down at night. Which of the following BEST describes this characteristic of cloud computing?",
+        "choices": {
+            "A": "Resource pooling",
+            "B": "Measured service",
+            "C": "Hybrid",
+            "D": "Rapid elasticity"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "A user’s tablet has stopped responding to any type of finger input on the screen. The clock and other tablet functions appear to be working. Which of the following would be the BEST way to correct this issue?",
+        "choices": {
+            "A": "Replace the screen",
+            "B": "Reset the wireless network",
+            "C": "Connect to a power source",
+            "D": "Restart the tablet"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "A system administrator needs a secure method of storing encryption keys. Which of the following would be the BEST choice for this requirement?",
+        "choices": {
+            "A": "BIOS",
+            "B": "Secure Boot",
+            "C": "NTFS",
+            "D": "HSM"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "A server administrator is upgrading the memory in a web server from 16 GB of non-ECC RAM to 64 GB of ECC RAM. After starting the system with the new memory, the computer beeps and nothing is displayed on the screen. Changing the number and location of new RAM modules results in the same beeping sounds and blank screen. After replacing the original 16 GB modules, the system starts normally. Which of the following is the MOST likely reason for this issue?",
+        "choices": {
+            "A": "The new memory is not compatible with the motherboard",
+            "B": "The new memory is faulty",
+            "C": "The BIOS needs to be updated",
+            "D": "The system is overheating during the startup process"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "A workstation has been assigned an APIPA address. Which of the following would be the MOST likely reason for this assignment?",
+        "choices": {
+            "A": "The workstation is not connected to the wireless network",
+            "B": "The DNS server is misconfigured",
+            "C": "The network is using public Internet addresses",
+            "D": "The DHCP server is down"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following can be used to forward traffic based on a destination MAC address?",
+        "choices": {
+            "A": "Unmanaged switch",
+            "B": "Repeater",
+            "C": "Router",
+            "D": "Firewall"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "A system administrator made some BIOS changes to a desktop computer running Windows 10, and now this message appears when starting the computer: “This drive can only boot in UEFI mode.” Which of the following would be the BEST next troubleshooting step?",
+        "choices": {
+            "A": "Modify the boot drive sequence",
+            "B": "Enable Secure Boot",
+            "C": "Remove the BIOS password",
+            "D": "Boot the system with the Windows setup media"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "A Windows user would like to temporarily store information from RAM onto their SSD. Which of the following features should be configured?",
+        "choices": {
+            "A": "Multi-channel memory",
+            "B": "ECC",
+            "C": "System Protection",
+            "D": "Virtual Memory"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "A technician is installing a DSL modem in a data center. Which of the following connectors would be used to connect the DSL modem to the Internet provider line?",
+        "choices": {
+            "A": "RS-232",
+            "B": "RJ11",
+            "C": "BNC",
+            "D": "F-connector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following would be the BEST choice for capturing an image from a printed page and saving it on a computer?",
+        "choices": {
+            "A": "QR code reader",
+            "B": "Optical drive",
+            "C": "Flatbed scanner",
+            "D": "Webcam"
+        },
+        "answer": "C"
     }
 ]
+
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerButtons");
