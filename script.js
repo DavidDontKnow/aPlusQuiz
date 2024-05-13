@@ -860,7 +860,7 @@ function startGame() {
     randomizeQuestions();
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next";
+    nextButton.innerText = "Next";
     let progress = document.createElement("p")
     progress.classList.add("progress");
     quiz.appendChild(progress);
@@ -872,12 +872,12 @@ function showQuestion() {
     showProgress();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
+    questionElement.innerText = questionNumber + ". " + currentQuestion.question;
 
     let choices = currentQuestion.choices;
     for (let choice in choices) {
         let button = document.createElement("button");
-        button.innerHTML = choices[choice];
+        button.innerText = choices[choice];
         button.dataset.answer = choice;
         button.classList.add("button");
         answerButtons.appendChild(button);
@@ -923,8 +923,8 @@ function handleNextQuestion() {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You got ${score} out of ${questions.length} questions correct!`;
-    nextButton.innerHTML = "Restart";
+    questionElement.innerText = `You got ${score} out of ${questions.length} questions correct!`;
+    nextButton.innerText = "Restart";
     nextButton.style.display = "block";
 }
 
@@ -938,7 +938,7 @@ nextButton.addEventListener("click", () => {
 
 function showProgress() {
     let pro = document.querySelector(".progress");
-    pro.innerHTML = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+    pro.innerText = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
 function randomizeQuestions() {
