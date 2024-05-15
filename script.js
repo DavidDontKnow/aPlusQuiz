@@ -834,7 +834,6 @@ const questions = [
     }
 ]
 
-
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerButtons");
 const nextButton = document.getElementById("nextButton");
@@ -845,7 +844,6 @@ let score = 0;
 
 
 
-// startGame();
 init();
 
 function init() {
@@ -922,8 +920,49 @@ function handleNextQuestion() {
 }
 
 function showScore() {
+    let grade = (score / questions.length) * 100;
     resetState();
-    questionElement.innerText = `You got ${score} out of ${questions.length} questions correct!`;
+    questionElement.innerText = `You got ${score} out of ${questions.length} questions correct!
+    Your grade is: `;
+    switch (true) {
+        case grade >= 97:
+            questionElement.innerText += " A+";
+            break;
+        case grade >= 93:
+            questionElement.innerText += " A";
+            break;
+        case grade >= 90:
+            questionElement.innerText += " A-";
+            break;
+        case grade >= 87:
+            questionElement.innerText += " B+";
+            break;
+        case grade >= 83:
+            questionElement.innerText += " B";
+            break;
+        case grade >= 80:
+            questionElement.innerText += " B-";
+            break;
+        case grade >= 77:
+            questionElement.innerText += " C+";
+            break;
+        case grade >= 73:
+            questionElement.innerText += " C";
+            break;
+        case grade >= 70:
+            questionElement.innerText += " C-";
+            break;
+        case grade >= 67:
+            questionElement.innerText += " D+";
+            break;
+        case grade >= 65:
+            questionElement.innerText += " D";
+            break;
+        default:
+            questionElement.innerText += " F";
+            break;
+    }
+
     nextButton.innerText = "Restart";
     nextButton.style.display = "block";
 }
