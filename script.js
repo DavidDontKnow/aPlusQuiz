@@ -1592,7 +1592,7 @@ const practiceQuestionsA = [
     }
 ]
 
-let questions = practiceQuestionsA.concat(practiceQuestionsB);
+let combinedQuestions = practiceQuestionsA.concat(practiceQuestionsB);
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerButtons");
@@ -1601,11 +1601,44 @@ const quiz = document.getElementById("questionTracker");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let questions = [];
 
 init();
 
 function init() {
     nextButton.style.display = "none";
+    let buttons = document.querySelectorAll(".button");
+    randomizeQuestions();
+    buttons.forEach(button => {
+        button.dataset.amount = button.innerText;
+        button.addEventListener("click", e => {
+            buttons.forEach(button => {
+                button.classList.remove("correct");
+            }
+            );
+            let selectedButton = e.target;
+            selectedButton.classList.add("correct");
+            let selectedAmount = selectedButton.dataset.amount;
+            switch (selectedAmount) {
+                case "15"
+                    :
+                    questions = combinedQuestions.slice(0, 15);
+                    break;
+                case "25":
+                    questions = combinedQuestions.slice(0, 25);
+                    break;
+                case "50":
+                    questions = combinedQuestions.slice(0, 50);
+                    break;
+                case "90":
+                    questions = combinedQuestions.slice(0, 90);
+                    break;
+                default:
+                    questions = combinedQuestions
+            }
+        }
+        );
+    });
     const startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
 }
@@ -1723,13 +1756,14 @@ function showScore() {
 
     nextButton.innerText = "Restart";
     nextButton.style.display = "block";
+    nextButton.onclick = () => {
+        document.location.reload();
+    }
 }
 
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextQuestion();
-    } else {
-        startGame();
     }
 });
 
@@ -1739,5 +1773,5 @@ function showProgress() {
 }
 
 function randomizeQuestions() {
-    questions.sort(() => Math.random() - 0.5);
+    combinedQuestions.sort(() => Math.random() - 0.5);
 }
