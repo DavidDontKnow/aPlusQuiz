@@ -753,6 +753,325 @@ const practiceQuestionsB = [
         },
         "answer": "D",
         "reason": "Most governments will regulate the usable frequencies and maximum power for the wireless spectrum. These regulations can vary depending on location, frequencies, or type of network."
+    },
+    {
+        "question": "What is RAID0 great for?",
+        "choices": {
+            "A": "Speed and data redundancy",
+            "B": "Data redundancy",
+            "C": "Speed but provides no data redundancy",
+            "D": "Losing data"
+        },
+        "answer": "C",
+        "reason": "RAID0 is great for speed but provides no data redundancy."
+    },
+    {
+        "question": "Which RAID level provides full redundancy?",
+        "choices": {
+            "A": "RAID0",
+            "B": "RAID1",
+            "C": "RAID5",
+            "D": "RAID6"
+        },
+        "answer": "B",
+        "reason": "RAID1 provides full redundancy."
+    },
+    {
+        "question": "What is the main benefit of RAID5?",
+        "choices": {
+            "A": "Striping with parity, one disk can be lost without losing any data",
+            "B": "Double striping with parity, two disks can be lost without losing any data",
+            "C": "Speed without data redundancy",
+            "D": "Full redundancy"
+        },
+        "answer": "A",
+        "reason": "RAID5 provides striping with parity and one disk can be lost without losing any data."
+    },
+    {
+        "question": "Which RAID level allows for two disks to be lost without losing any data?",
+        "choices": {
+            "A": "RAID0",
+            "B": "RAID1",
+            "C": "RAID5",
+            "D": "RAID6"
+        },
+        "answer": "D",
+        "reason": "RAID6 provides double striping with parity and two disks can be lost without losing any data."
+    },
+    {
+        "question": "Which RAID level offers both redundancy and performance?",
+        "choices": {
+            "A": "RAID0",
+            "B": "RAID1",
+            "C": "RAID5",
+            "D": "RAID 10"
+        },
+        "answer": "D",
+        "reason": "RAID 10 offers both redundancy and performance."
+    },
+    {
+        "question": "What does hot-swappable mean?",
+        "choices": {
+            "A": "Capable of being removed or replaced without disruption or powering off the device",
+            "B": "Cannot be removed without losing data",
+            "C": "Requires device shutdown to remove or replace",
+            "D": "Only applicable to external devices"
+        },
+        "answer": "A",
+        "reason": "Hot-swappable means capable of being removed or replaced without disruption or powering off the device."
+    },
+    {
+        "question": "Which interface allows hot-swappable capability with SATA devices?",
+        "choices": {
+            "A": "PATA",
+            "B": "AHCI",
+            "C": "USB",
+            "D": "RAID"
+        },
+        "answer": "B",
+        "reason": "Advanced Host Controller Interface (AHCI) is a technical standard developed by Intel that allows hot-swappable capability with SATA devices."
+    },
+    {
+        "question": "What is the maximum capacity of the original secure digital (SD) cards?",
+        "choices": {
+            "A": "1 GB",
+            "B": "2 GB",
+            "C": "4 GB",
+            "D": "8 GB"
+        },
+        "answer": "B",
+        "reason": "The original secure digital (SD) cards had a maximum capacity of 2 GB."
+    },
+    {
+        "question": "What is a port?",
+        "choices": {
+            "A": "A physical connector for plugging in cables",
+            "B": "A logical communication endpoint that exists on a computer or server",
+            "C": "A type of firewall",
+            "D": "A network switch"
+        },
+        "answer": "B",
+        "reason": "A port is a logical communication endpoint that exists on a computer or server."
+    },
+    {
+        "question": "What is an inbound port?",
+        "choices": {
+            "A": "A logical communication opening on a client to call out to a server",
+            "B": "A physical port on a router",
+            "C": "A logical communication opening on a server that is listening for a connection from a client",
+            "D": "A port used for outgoing emails"
+        },
+        "answer": "C",
+        "reason": "An inbound port is a logical communication opening on a server that is listening for a connection from a client."
+    },
+    {
+        "question": "What is an outbound port?",
+        "choices": {
+            "A": "A port used for sending data to printers",
+            "B": "A logical communication opening created on a client to call out to a server that is listening for a connection",
+            "C": "A port that receives data from a server",
+            "D": "A physical port on a computer"
+        },
+        "answer": "B",
+        "reason": "An outbound port is a logical communication opening created on a client to call out to a server that is listening for a connection."
+    },
+    {
+        "question": "What is the range of well-known ports?",
+        "choices": {
+            "A": "0 to 1023",
+            "B": "1024 to 49151",
+            "C": "49152 to 65535",
+            "D": "0 to 65535"
+        },
+        "answer": "A",
+        "reason": "Well-known ports range from 0 to 1023 and are assigned by the Internet Assigned Numbers Authority (IANA)."
+    },
+    {
+        "question": "What are registered ports?",
+        "choices": {
+            "A": "Ports 0 to 1023",
+            "B": "Ports 1024 to 49151",
+            "C": "Ports 49152 to 65535",
+            "D": "Ports used for proprietary protocols"
+        },
+        "answer": "B",
+        "reason": "Registered ports range from 1024 to 49151 and are usually assigned to proprietary protocols."
+    },
+    {
+        "question": "What are dynamic or private ports?",
+        "choices": {
+            "A": "Ports 0 to 1023",
+            "B": "Ports 1024 to 49151",
+            "C": "Ports 49152 to 65535",
+            "D": "Ports used exclusively for email communication"
+        },
+        "answer": "C",
+        "reason": "Dynamic or private ports range from 49152 to 65535 and can be used by any application without being registered with IANA."
+    },
+    {
+        "question": "Which port is used by the File Transfer Protocol (FTP) for file transfers?",
+        "choices": {
+            "A": "20, 21",
+            "B": "22",
+            "C": "23",
+            "D": "25"
+        },
+        "answer": "A",
+        "reason": "Ports 20 and 21 are used by the File Transfer Protocol (FTP) for insecure file transfers."
+    },
+    {
+        "question": "Which port is used for secure remote control using a text-based environment?",
+        "choices": {
+            "A": "20",
+            "B": "21",
+            "C": "22",
+            "D": "23"
+        },
+        "answer": "C",
+        "reason": "Port 22 is used by Secure Shell (SSH) for secure remote control of another machine using a text-based environment."
+    },
+    {
+        "question": "Which port is used by the Telnet protocol?",
+        "choices": {
+            "A": "20",
+            "B": "21",
+            "C": "22",
+            "D": "23"
+        },
+        "answer": "D",
+        "reason": "Port 23 is used by the Telnet protocol for insecure remote control of another machine using a text-based environment."
+    },
+    {
+        "question": "Which port is used by the Simple Mail Transfer Protocol (SMTP) to send emails?",
+        "choices": {
+            "A": "20",
+            "B": "21",
+            "C": "25",
+            "D": "53"
+        },
+        "answer": "C",
+        "reason": "Port 25 is used by the Simple Mail Transfer Protocol (SMTP) to send emails over the network."
+    },
+    {
+        "question": "Which port is used by the Domain Name Service (DNS)?",
+        "choices": {
+            "A": "25",
+            "B": "53",
+            "C": "67, 68",
+            "D": "80"
+        },
+        "answer": "B",
+        "reason": "Port 53 is used by the Domain Name Service (DNS) to convert domain names to IP addresses, and IP addresses to domain names."
+    },
+    {
+        "question": "Which ports are used by the Dynamic Host Control Protocol (DHCP)?",
+        "choices": {
+            "A": "53",
+            "B": "67, 68",
+            "C": "80",
+            "D": "110"
+        },
+        "answer": "B",
+        "reason": "Ports 67 and 68 are used by the Dynamic Host Control Protocol (DHCP) to automatically provide network parameters such as assigned IP address, subnet mask, default gateway, and the DNS server."
+    },
+    {
+        "question": "Which port is used by the Hypertext Transfer Protocol (HTTP)?",
+        "choices": {
+            "A": "80",
+            "B": "110",
+            "C": "143",
+            "D": "443"
+        },
+        "answer": "A",
+        "reason": "Port 80 is used by the Hypertext Transfer Protocol (HTTP) for insecure web browsing."
+    },
+    {
+        "question": "Which port is used by the Post Office Protocol Version Three (POP3) to receive incoming emails?",
+        "choices": {
+            "A": "80",
+            "B": "110",
+            "C": "143",
+            "D": "443"
+        },
+        "answer": "B",
+        "reason": "Port 110 is used by the Post Office Protocol Version Three (POP3) to receive incoming emails."
+    },
+    {
+        "question": "Which ports are used by the Network Basic Input/Output System (NetBIOS) for file or printer sharing in a Windows network?",
+        "choices": {
+            "A": "110",
+            "B": "137, 139",
+            "C": "143",
+            "D": "161, 162"
+        },
+        "answer": "B",
+        "reason": "Ports 137 and 139 are used by the Network Basic Input/Output System (NetBIOS) for file or printer sharing in a Windows network."
+    },
+    {
+        "question": "Which port is used by the Internet Mail Application Protocol (IMAP) to retrieve incoming emails?",
+        "choices": {
+            "A": "110",
+            "B": "137, 139",
+            "C": "143",
+            "D": "161, 162"
+        },
+        "answer": "C",
+        "reason": "Port 143 is used by the Internet Mail Application Protocol (IMAP) to retrieve incoming emails."
+    },
+    {
+        "question": "Which ports are used by the Simple Network Management Protocol (SNMP) to collect data about network devices and monitor their status?",
+        "choices": {
+            "A": "110",
+            "B": "137, 139",
+            "C": "143",
+            "D": "161, 162"
+        },
+        "answer": "D",
+        "reason": "Ports 161 and 162 are used by the Simple Network Management Protocol (SNMP) to collect data about network devices and monitor their status."
+    },
+    {
+        "question": "Which port is used by the Lightweight Directory Access Protocol (LDAP) to provide directory services to a network?",
+        "choices": {
+            "A": "389",
+            "B": "443",
+            "C": "445",
+            "D": "3389"
+        },
+        "answer": "A",
+        "reason": "Port 389 is used by the Lightweight Directory Access Protocol (LDAP) to provide directory services to a network."
+    },
+    {
+        "question": "Which port is used by the Hypertext Transfer Protocol – Secure (HTTPS) for secure web browsing?",
+        "choices": {
+            "A": "389",
+            "B": "443",
+            "C": "445",
+            "D": "3389"
+        },
+        "answer": "B",
+        "reason": "Port 443 is used by the Hypertext Transfer Protocol – Secure (HTTPS) for secure web browsing."
+    },
+    {
+        "question": "Which port is used by the Server Message Block (SMB) for Windows file and printer sharing services?",
+        "choices": {
+            "A": "389",
+            "B": "443",
+            "C": "445",
+            "D": "3389"
+        },
+        "answer": "C",
+        "reason": "Port 445 is used by the Server Message Block (SMB) for Windows file and printer sharing services."
+    },
+    {
+        "question": "Which port is used by the Remote Desktop Protocol (RDP) to provide graphical remote control of another client or server?",
+        "choices": {
+            "A": "389",
+            "B": "443",
+            "C": "445",
+            "D": "3389"
+        },
+        "answer": "D",
+        "reason": "Port 3389 is used by the Remote Desktop Protocol (RDP) to provide graphical remote control of another client or server."
     }
 ]
 
