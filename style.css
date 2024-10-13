@@ -31,7 +31,8 @@ h1 {
     font-weight: bold;
 }
 
-#startButton {
+#startButton,
+#coreSelect {
     background-color: #66c0f4;
     border: none;
     padding: 1rem 2rem;
