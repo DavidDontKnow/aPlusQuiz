@@ -3653,19 +3653,7 @@ const core2QuestionsB = [
         "answer": "A",
         "reason": "If the date and time on the laptop is incorrect, encryption certificates may appear expired, causing HTTPS security alerts."
     },
-    {
-        "question": "A user on the sales team has opened a help desk ticket because of short battery times on a new company-provided tablet. When using the tablet, the battery only lasts a few hours before shutting off. Which of the following would be the BEST choices for improving the battery life? (Select TWO)",
-        "choices": {
-            "A": "Install the latest operating system patches",
-            "B": "Increase the brightness levels",
-            "C": "Connect to the corporate VPN",
-            "D": "Disable Bluetooth and cellular connections",
-            "E": "Close apps that work in the background",
-            "F": "Perform a soft reset"
-        },
-        "answer": "D, E",
-        "reason": "Disabling Bluetooth and cellular connections and closing background apps are effective ways to reduce battery drain."
-    },
+
     {
         "question": "A system administrator would like to perform a Windows installation while users are away from their desks. Which of the following would be the BEST option for this installation?",
         "choices": {
@@ -3699,19 +3687,7 @@ const core2QuestionsB = [
         "answer": "C",
         "reason": "FileVault provides full disk encryption for macOS devices, ensuring all data on the laptop is secure."
     },
-    {
-        "question": "A data center manager is installing a new access door that will require multi-factor authentication. Which of the following should be used to meet this requirement? (Select TWO)",
-        "choices": {
-            "A": "Cabinet locks",
-            "B": "Key fobs",
-            "C": "Privacy filter",
-            "D": "Palmprint scanner",
-            "E": "USB lock",
-            "F": "Cable lock"
-        },
-        "answer": "B, D",
-        "reason": "Key fobs (something you have) and palmprint scanners (something you are) provide two-factor authentication for the new access door."
-    },
+
     {
         "question": "A user has opened a help desk ticket regarding the battery life in her three-year-old smartphone. If a power source is not available, the phone battery is usually depleted by the middle of the workday. She uses the smartphone to access resources across the VPN, send and receive email, and run company-related apps. Her average screen time during the day usually exceeds six hours. Which of the following would be the MOST likely reason for this battery issue?",
         "choices": {
@@ -3745,19 +3721,7 @@ const core2QuestionsB = [
         "answer": "B",
         "reason": "Increasing the available storage space is the best solution to resolve temporary file cache space issues caused by large graphic files."
     },
-    {
-        "question": "A network administrator is installing a set of upgraded Internet routers in the data center. Which of the following would be the best choices to secure the access to the internal data center door? (Select TWO)",
-        "choices": {
-            "A": "Biometric lock",
-            "B": "ACL",
-            "C": "Bollard",
-            "D": "Additional lighting",
-            "E": "Motion sensor",
-            "F": "Access control vestibule"
-        },
-        "answer": "A, F",
-        "reason": "A biometric lock and an access control vestibule provide effective physical security measures to control access to the data center door."
-    },
+
     {
         "question": "An administrator is troubleshooting an error message that appears each time an application is started. The administrator has uninstalled and reinstalled the application, but the error message still appears. Which of the following would be the BEST next troubleshooting step?",
         "choices": {
@@ -4108,6 +4072,7 @@ function init() {
 
 
 function startGame() {
+    coreSelect.style.display = "none";
     startButton.style.display = "none";
     randomizeQuestions();
     currentQuestionIndex = 0;
